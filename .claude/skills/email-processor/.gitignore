@@ -1,0 +1,61 @@
+# 环境变量文件（包含敏感信息）
+.env
+.env.local
+.env.*.local
+.email-processor.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 测试输出
+*.log
+test_output/
+/tmp/
+
+# 邮件数据（可能包含敏感信息）
+mails/
+*.eml
+*.mbox
+
+# 输出文件
+email_summary.md
+*.md.backup
+
+# 备份文件
+*.bak
+*.backup
+*~

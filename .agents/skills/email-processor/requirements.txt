@@ -1,0 +1,10 @@
+# Email Processor 技能依赖
+
+# HTML 解析
+beautifulsoup4>=4.14.3
+
+# HTML 转 Markdown
+markdownify>=1.2.2
+
+# .env 文件支持
+python-dotenv>=1.2.2

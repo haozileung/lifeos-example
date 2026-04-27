@@ -1,0 +1,23 @@
+{
+  "skill_name": "para-project-lifecycle",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "创建一个新项目：BVF团队Q2季度OKR，tag用work/bvf/FY27Q2，截止日期2026-09-30",
+      "expected_output": "在1.Projects/下创建work-bvf-FY27Q2目录和FY27Q2.README.md，frontmatter包含正确的tags、project-status:active、due_date、aliases，正文包含LifeOS查询块",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "work-devops-cloud-migration 项目完成了，归档它。原因是云迁移全部完成。",
+      "expected_output": "更新README frontmatter（PARA/Projects→PARA/Archives，status→completed，添加archive-date和archive-reason），移动目录到4.Archives/，更新全库wiki-link引用",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "把 work-platform-FY25Q2 从归档恢复成活跃项目，新的截止日期设到2026-06-30",
+      "expected_output": "从4.Archives/移回1.Projects/，frontmatter恢复为PARA/Projects和active，更新due_date，移除archive字段，更新全库wiki-link",
+      "files": []
+    }
+  ]
+}

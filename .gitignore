@@ -1,0 +1,18 @@
+.DS_Store
+.vscode/
+.idea/
+.trash/
+.claude/sessions/
+
+
+*.pyc
+*.skill
+
+# Ignore Smart Environment folder
+.smart-env
+
+# Environment variables (secrets)
+.env
+
+# Obsidian workspace state
+.obsidian/workspace.json

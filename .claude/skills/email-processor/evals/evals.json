@@ -1,0 +1,40 @@
+{
+  "skill_name": "email-processor",
+  "evals": [
+    {
+      "id": 1,
+      "name": "fetch-recent-emails",
+      "prompt": "获取最近10封邮件。我的邮箱配置在 .env 文件中。",
+      "expected_output": "使用 imap_client.py 脚本连接 IMAP 服务器，获取最近10封邮件。每封邮件输出应包含：主题、发件人、日期、正文（Markdown格式）。邮件应保存到 mails/ 目录或输出到控制台。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "filter-by-sender",
+      "prompt": "查找所有来自 notification@amazon.com 的邮件",
+      "expected_output": "使用 IMAP 搜索命令 '(FROM \"notification@amazon.com\")' 筛选邮件。返回每封邮件的完整内容（主题、发件人、日期、正文），不生成任何摘要。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "filter-by-date-range",
+      "prompt": "获取2026年3月1日以来的所有邮件",
+      "expected_output": "使用 SINCE 搜索条件筛选日期范围内的邮件。返回原始邮件内容，不做任务提取或摘要生成。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "search-unread-emails",
+      "prompt": "列出所有未读邮件",
+      "expected_output": "使用 UNSEEN 搜索条件获取未读邮件。返回每封邮件的完整内容，不进行任何加工处理。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "console-output-mode",
+      "prompt": "获取今天的两封邮件并直接输出到控制台",
+      "expected_output": "使用 --print 参数将邮件内容直接输出到终端，而不是保存到文件。",
+      "files": []
+    }
+  ]
+}

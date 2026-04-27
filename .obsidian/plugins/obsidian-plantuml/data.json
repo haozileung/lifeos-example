@@ -1,0 +1,11 @@
+{
+  "server_url": "http://localhost:9090",
+  "header": "!global $INCLUSION_MODE=\"local\"\n!global $LIB_BASE_LOCATION=\"/include\"\n!include $LIB_BASE_LOCATION/bootstrap.puml\ninclude('c4k8s/full')\ninclude('domainstorytelling/full')\ninclude('eventstorming/full')",
+  "debounce": 3,
+  "localJar": "",
+  "javaPath": "java",
+  "dotPath": "dot",
+  "defaultProcessor": "png",
+  "cache": 60,
+  "exportPath": ""
+}

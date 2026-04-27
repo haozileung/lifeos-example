@@ -1,0 +1,39 @@
+{
+  "copyAsHTML": false,
+  "applyingTo": "all",
+  "rtf": false,
+  "separateHotkey": false,
+  "editing": {
+    "footnotes": "keep",
+    "links": "keep",
+    "callout": "obsidian",
+    "highlight": false,
+    "hardBreak": false,
+    "replaceText": [],
+    "overrideNativeCopy": true,
+    "convertDataview": {
+      "enable": false,
+      "djs": {
+        "inline": false,
+        "block": false
+      },
+      "dql": {
+        "inline": false,
+        "block": false
+      }
+    }
+  },
+  "reading": {
+    "footnotes": "keep",
+    "links": "keep",
+    "callout": "obsidian",
+    "highlight": false,
+    "hardBreak": false,
+    "replaceText": [],
+    "overrideNativeCopy": true,
+    "spaceReadingSize": -1,
+    "wikiToMarkdown": false
+  },
+  "devMode": false,
+  "profiles": []
+}

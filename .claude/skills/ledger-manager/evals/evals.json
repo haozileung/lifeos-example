@@ -1,0 +1,53 @@
+{
+  "skill_name": "ledger-manager",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我今天早餐花了25元，帮我记录到账本里",
+      "expected_output": "应该生成符合 Ledger 格式的交易记录，包含日期、描述、支出账户和资产账户，并验证交易平衡",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我想查看我现在所有的账户余额",
+      "expected_output": "应该运行 ledger balance 命令显示所有账户的当前余额，或者引导用户设置 LEDGER_FILE 环境变量（如果未设置）",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "帮我生成本月的支出报告，按类别统计",
+      "expected_output": "应该运行 ledger balance 命令，带 --monthly 参数和支出账户过滤，生成按月和类别统计的支出报告",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "我刚下载了 Ledger，想开始记账，但不知道从哪里开始",
+      "expected_output": "应该引导新用户完成初始设置：创建 ledger 文件、设置环境变量、添加初始余额交易、记录第一笔交易，并解释基本概念",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "我昨天在超市花了150元买菜，今天又花了35元吃午饭，帮我记录这两笔交易",
+      "expected_output": "应该生成两个独立的交易记录，每个都包含正确的日期、描述、金额和账户分类，并验证每笔交易都符合双式记账原则",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "我这个月总共花了多少钱？按类别给我看看",
+      "expected_output": "应该运行 ledger balance 命令，过滤支出账户并按类别汇总，显示本月各类别的支出总额",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "我想设置一个每月3000元的房租预算，并查看执行情况",
+      "expected_output": "应该帮助用户设置预算规则，并使用 ledger --budget 命令生成预算执行报告",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "把1000元从支票账户转到储蓄账户",
+      "expected_output": "应该生成一个转账交易，从 Assets:Checking 转到 Assets:Savings，金额为1000元",
+      "files": []
+    }
+  ]
+}

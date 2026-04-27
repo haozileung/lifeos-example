@@ -1,0 +1,18 @@
+{
+  "attachmentFolderPath": "6.Attachments",
+  "showLineNumber": false,
+  "showInlineTitle": true,
+  "showUnsupportedFiles": true,
+  "readableLineLength": false,
+  "newLinkFormat": "absolute",
+  "newFileLocation": "root",
+  "newFileFolderPath": "_Inbox",
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

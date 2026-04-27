@@ -1,0 +1,14 @@
+{
+  "eval_id": 1,
+  "eval_name": "archive-project",
+  "prompt": "work-devops-cloud-migration 项目完成了，归档它。原因是云迁移全部完成。",
+  "assertions": [
+    {"name": "frontmatter_para_tag", "description": "tags中 PARA/Projects 改为 PARA/Archives"},
+    {"name": "frontmatter_status", "description": "project-status 改为 completed"},
+    {"name": "frontmatter_archive_date", "description": "新增 archive-date 字段"},
+    {"name": "frontmatter_archive_reason", "description": "新增 archive-reason 字段"},
+    {"name": "directory_moved", "description": "目录从 1.Projects/ 移动到 4.Archives/"},
+    {"name": "wikilinks_updated", "description": "全库 wiki-link 从 1.Projects/work-devops-cloud-migration 更新为 4.Archives/work-devops-cloud-migration"},
+    {"name": "zero_stale_refs", "description": "更新后无残留的旧路径引用"}
+  ]
+}

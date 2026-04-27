@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Skill(skill-creator)",
+      "Skill(obsidian-markdown)",
+      "Skill(json-canvas)",
+      "Skill(apple-calendar-import)",
+      "Skill(teams-notify)",
+      "Bash(git:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(obsidian:*)",
+      "Bash(ledger:*)",
+      "Edit",
+      "Read",
+      "WebSearch"
+    ]
+  },
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    },
+    "obsidian-skills": {
+      "source": {
+        "source": "github",
+        "repo": "kepano/obsidian-skills"
+      }
+    }
+  },
+  "outputStyle": "Productivity Coach",
+  "enabledPlugins": {
+    "obsidian@obsidian-skills": true
+  }
+}

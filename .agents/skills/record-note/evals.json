@@ -1,0 +1,59 @@
+{
+  "skill_name": "record-note",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "记录：今天和Oliver对齐了团队能力建设目标，需聚焦自动化和协作。",
+      "expected_output": "内容应插入到今日笔记的📝 Daily Record区块，带有#work/devops等topic tag和相关wiki-link。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "记录：本周完成了DevOps自动化脚本开发，等待测试反馈。",
+      "expected_output": "内容应插入到对应项目笔记或本周周记的项目进展区块，带有#work/devops等topic tag和相关wiki-link。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "记录：今日已完成冥想习惯打卡。",
+      "expected_output": "内容应插入到今日笔记的📝 Daily Record或⏰ Habits区块，带有#personal-growth等topic tag。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "记录：灵感——用AI自动整理会议纪要。",
+      "expected_output": "内容应插入到3.Resources/AI/或今日笔记，带有#ai/meeting-notes等topic tag。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "记录：请帮我记录‘2026年Q1 OKR复盘’。",
+      "expected_output": "内容应插入到2026年第一季度的季度笔记（0.PeriodicNotes/2026/Quarterly/2026-Q1.md），带有#okr等topic tag，若无法判断具体项目或领域需询问用户。",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "记录：收到一笔意外收入，记账。",
+      "expected_output": "内容应插入到2.Areas/finance/或今日笔记，带有#finance/income等topic tag，若无法判断归属需询问用户。",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "记录：团队成员小王获得表彰。",
+      "expected_output": "内容应插入到2.Areas/work-general/或今日笔记，带有#work/recognition等topic tag，若无法判断归属需询问用户。",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "记录：明天有个重要会议，记得准备材料。",
+      "expected_output": "内容应插入到今日笔记的📝 Daily Record区块，并自动生成明日提醒，带有#meeting/prep等topic tag，若无法判断需询问用户。",
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "记录：‘2026-03-25’未找到合适归属，请问应记录到哪个项目或领域？",
+      "expected_output": "系统应主动询问用户归属（项目/领域/周期），并在获得明确指示后再插入内容。",
+      "files": []
+    }
+  ]
+}

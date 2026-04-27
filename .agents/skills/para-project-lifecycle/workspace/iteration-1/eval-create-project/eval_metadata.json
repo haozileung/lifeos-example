@@ -1,0 +1,14 @@
+{
+  "eval_id": 0,
+  "eval_name": "create-project",
+  "prompt": "创建一个新项目：BVF团队Q2季度OKR，tag用work/bvf/FY27Q2，截止日期2026-09-30",
+  "assertions": [
+    {"name": "directory_created", "description": "在1.Projects/下创建了正确的项目目录 work-bvf-FY27Q2/"},
+    {"name": "readme_created", "description": "创建了README文件 FY27Q2.README.md，包含正确的frontmatter"},
+    {"name": "frontmatter_tags", "description": "frontmatter tags包含 PARA/Projects 和 work/bvf/FY27Q2"},
+    {"name": "frontmatter_status", "description": "project-status 为 active"},
+    {"name": "frontmatter_aliases", "description": "aliases 包含 #work/bvf/FY27Q2"},
+    {"name": "has_lifeos_queries", "description": "README正文包含LifeOS查询块(TaskListByTag/BulletListByTag/FileListByTag)"},
+    {"name": "quarterly_link", "description": "关联到了对应的季度笔记"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "eval_id": 2,
+  "eval_name": "reactivate-project",
+  "prompt": "把 work-devops-cursor-rollout 从归档恢复，新的截止日期设到2026-12-31",
+  "assertions": [
+    {"name": "frontmatter_para_tag_restored", "description": "tags中 PARA/Archives 改回 PARA/Projects"},
+    {"name": "frontmatter_status_restored", "description": "project-status 改回 active"},
+    {"name": "frontmatter_archive_removed", "description": "archive-date 和 archive-reason 字段已移除"},
+    {"name": "frontmatter_due_date_updated", "description": "due_date 更新为 2026-12-31"},
+    {"name": "directory_moved_back", "description": "目录从 4.Archives/ 移回 1.Projects/"},
+    {"name": "wikilinks_restored", "description": "全库 wiki-link 从 4.Archives/work-devops-cursor-rollout 更新回 1.Projects/work-devops-cursor-rollout"},
+    {"name": "zero_stale_refs", "description": "更新后无残留的归档路径引用"}
+  ]
+}
